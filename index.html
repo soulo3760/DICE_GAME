@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>PIG DICE</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+<<script src="<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/core.js" integrity="sha256-YCbKJH6u4siPpUlk130udu/JepdKVpXjdEyzje+z1pE=" crossorigin="anonymous"></script>" charset="utf-8"></script>
+    <script type="text/javascript" src="js/jquery-3.3.1.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+  </head>
+
+  <body>
+    <div class="container" id="header">
+      <div class="row">
+        <div class="card-header">
+          <h1>  Roll a Die</h1>
+          <p>
+            See who holds the lucky charm?
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="entry-form">
+          <h2><strong>Players, enter your names here.</strong></h2>
+          <form id="user-name">
+            <div class="form-group form-inline">
+              <label for="player-1">1st Player: &nbsp;</label>
+              <input type="text" id="player-1" class="form-control" placeholder="Enter name">
+            </div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <div class="form-group form-inline">
+              <label for="player-2">2nd Player: &nbsp;</label>
+              <input type="text" id="player-2" class="form-control" placeholder="Enter name">
+            </div>
+
+          <button type="submit" class="btn btn-primary">OK</button>
+          </form>
+        </div>
+      </div>
+
+        <div class="row">
+          <div class="col-md-3 card-body" id="player-1-side">
+            <div id="profile1">
+              <h2><span class="player1-Name"></span></h2>
+              <p>
+                Cumulative points:<span id="currentTotal1"></span>
+              </p>
+            </div>
+            <p>
+              Your Score: <span id="currentScore1"></span>
+            </p>
+
+
+            <button type="button" class="btn btn-outline-primary" id="roll1">Roll</button>
+
+          </div>
+          <div class="col-md-3">
+            <h3 id="diceOne">You lost! Time for your opponent to play!</h3>
+            <button type="button" class="btn btn-primary" onclick="pause()" id="pause1">Player1 Pause</button><br>
+            <button type="button" class="btn btn-primary" onclick="pause()" id="pause2">Player2 Pause</button>
+
+          </div>
+          <div class="col-md-3 card-body" id="player-2-side">
+            <div id="profile2">
+              <h2><span class="player2-Name"></span></h2>
+              <p>
+                Cumulative points:<span id="currentTotal2"></span>
+              </p>
+            </div>
+            <p>
+              Your Score: <span id="currentScore2"></span>
+            </p>
+
+            <button type="button" class="btn btn-outline-primary" id="roll2">Roll</button>
+
+          </div>
+        </div>
+
+    </div>
+
+  </body>
+</html>
