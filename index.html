@@ -4,7 +4,7 @@
     <title>PIG DICE</title>
     <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
     <link href="css/style.css" rel="stylesheet" type="text/css">
-<script src="<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/core.js" integrity="sha256-YCbKJH6u4siPpUlk130udu/JepdKVpXjdEyzje+z1pE=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/core.js" integrity="sha256-YCbKJH6u4siPpUlk130udu/JepdKVpXjdEyzje+z1pE=" crossorigin="anonymous"></script>
     <script type="text/javascript" src="js/jquery-3.3.1.js"></script>
     <script type="text/javascript" src="js/script.js"></script>
   </head>
@@ -13,7 +13,7 @@
       <div class="container">
         <div class="jumbotron">
       <div class="row">
-        <div class="col-md-8"
+        <div class="col-md-12"
           <h1>PIG DICE TIME</h1>
           <link img src="https://www.google.com/imgres?imgurl=https%3A%2F%2Fwww.whatdowedoallday.com%2Fwp-content%2Fuploads%2F2017%2F09%2Fpig-dice-fb680.jpg&imgrefurl=https%3A%2F%2Fwww.whatdowedoallday.com%2Fpig-dice-game%2F&docid=CCm9qK-m5O__yM&tbnid=ShUO_daCrCg_QM%3A&vet=10ahUKEwjjgf3hjuXgAhWMGBQKHf-aBwcQMwhCKAEwAQ..i&w=680&h=382&bih=470&biw=675&q=PIG%20DICE&ved=0ahUKEwjjgf3hjuXgAhWMGBQKHf-aBwcQMwhCKAEwAQ&iact=mrc&uact=8" alt="pig-dice image">
       <h2> BE THE FIRST TO REACH 100 TO WIN1</H2>
@@ -23,23 +23,36 @@
       <div class="field1">
         <div class="row">
           <div class="col-md-8"
-          <h2><strong>1st player</strong></h2>
-              <input type="text" id="player-1" class="form-control" placeholder="Enter name">
+          <h2><strong>1st player<span id="player1"></span> </strong></h2>
+              <input type="text" id="play1" class="form-control" placeholder="username">
+<button type="button" id="rollone" class="btn btn green">roll</button>
+<button type="button" id="holdone" class="btn btn red">hold</button>
+                  <p> <scan id="roll1"></scan> </p>
+                  <p> <scan id="hold1"></scan> </p>
             </div>
               </div>
                 </div>
+                <p> TURN SCORE <scan id="sroll1"></scan> </p> <br>
+                <p> ROLL SCORE <scan id="shold1"></scan> </p> <br>
+                <p> TOTAL SCORE <scan id="stotal1"></scan> </p> <br
             <div class="field 2">
               <div class="row">
-                <div class="col-md-6"
-                <h2><strong>2nd player</strong></h2>
-              <input type="text" id="player-2" class="form-control" placeholder="Enter name">
+                <div class="col-md-8"
+                <h2><strong>2nd player<span id="player2"></span></strong></h2>
+              <input type="text" id="play2" class="form-control" placeholder="username">
+              <button type="button" id="rolltwo" class="btn btn green">roll</button>
+              <button type="button" id="holdtwo" class="btn btn red">hold</button>
+              <p> <scan id="roll2"></scan> </p>
+              <p> <scan id="hold2"></scan> </p>
             </div>
-
-          <button type="submit" class="btn btn-primary">OK</button>
           </div>
             </div>
               </div>
+              <p> TURN SCORE <scan id="sroll2"></scan> </p> <br>
+              <p> ROLL SCORE <scan id="shold2"></scan> </p> <br>
+              <p> TOTAL SCORE <scan id="stotal2"></scan> </p> <br>
+                      <p> <scan id="hold1"></scan> </p>
+            <p> CONGRATULATIONS: the winner is </p>
           </form>
-
   </body>
 </html>
