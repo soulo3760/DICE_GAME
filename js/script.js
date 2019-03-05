@@ -1,7 +1,9 @@
+var player1= {}
+var player2={}
  function player {
    this.roll= 0;
    this.turnscore= 0;
-   this.totlscore=0;
+   this.totalscore=0;
  }
  player.prototype.turn= function(){
    this.totalscore+=this.turnscore;
@@ -26,28 +28,39 @@
  //USER LOGIC
 
  $ (document).ready(function(){
-      event.preventDefault();/home/usergag/projects/MAINPROJECT/week4/dice/index.html
+      event.preventDefault();
    var player1input= $(input#play1).val();
    var player2input= $(input#play2).val();
    $("#player1".text(player1input);
    $("#player2".text(player2input);
    event.preventDefault();
+
 player1.roll= rollvalue();
 $("#sroll1")
  $(button#rollone).click(function(event)
 {
   event.preventDefault();
+  player1.rollone= rollValue();
+  $("roll1").text (player1.rollone);
+  $("roll1").text (player1.rollone);
+  player1.check1();
 
 })
 $(button#rolltwo).click(function(event)
 {
- event.preventDefault();
+  event.preventDefault();
+  player2.rollone= rollValue();
+  $("roll1").text (player1.rollone);
+  $("roll1").text (player1.rollone);
+  player1.check1();
 
 })
 $(button#roll1).click(function(event)
 {
- event.preventDefault();
-
+  event.preventDefault();
+  player1.hold();
+  player1.win();
+  $(#stotal1).text(player1.totalscore);
 })
 $(button#hold1).click(function(event)
 {
@@ -57,5 +70,8 @@ $(button#hold1).click(function(event)
 $(button#hold2).click(function(event)
 {
  event.preventDefault();
+player2.hold();
+player2.win();
+$(#stotal2).text(player2.totalscore);
 
 })
